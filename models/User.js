@@ -38,7 +38,7 @@ UserSchema.virtual('friendCount').get(function() {
 })
 
 
-const Users = model('Users', UserSchema);
+const Users = model('User', UserSchema);
 
 
 module.exports = Users;

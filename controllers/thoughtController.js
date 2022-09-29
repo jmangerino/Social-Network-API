@@ -85,8 +85,8 @@ const thoughtController = {
 
         // remove thought id from user's `thoughts` field
         return User.findOneAndUpdate(
-          { thoughts: params.id },
-          { $pull: { thoughts: params.id } }, 
+          { thought: params.id },
+          { $pull: { thought: params.id } }, 
           { new: true }
         );
       })
@@ -105,7 +105,7 @@ const thoughtController = {
   addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
-      { $addToSet: { reactions: body } },
+      { $addToSet: { reaction: body } },
       { new: true, runValidators: true }
     )
       .then((dbThoughtData) => {
