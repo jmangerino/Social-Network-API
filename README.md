@@ -18,6 +18,7 @@ and that you will run npm start.
     
 ## Usage
 You can use this in Insomnia to test it out the routes.
+[Video](https://drive.google.com/file/d/1eL_uAEOBrUFk4jnFT6SJBOykMqTIFwqd/view?usp=sharing)
 
 ## Contribution
 there are no guidelines right now.
